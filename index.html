@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telessaúde Missionária - Conecte-se ao seu Grupo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        header h1 {
+            color: #2a7a71; /* Um tom de verde missionário */
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .region-grid, .general-groups-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .region-card, .general-group-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .region-card:hover, .general-group-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .region-card h2, .general-group-card h2 {
+            font-size: 1.5em;
+            color: #005a87; /* Um azul escuro para destaque */
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .region-card p, .general-group-card p {
+            font-size: 0.95em;
+            color: #444;
+            margin-bottom: 15px;
+            min-height: 80px; /* Para alinhar os botões caso os textos tenham tamanhos diferentes */
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366; /* Cor oficial do WhatsApp */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DAE54;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #2a7a71;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Ajustes para telas menores */
+        @media (max-width: 600px) {
+            .region-grid, .general-groups-grid {
+                grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+            }
+            .region-card p, .general-group-card p {
+                min-height: auto; /* Remove altura mínima em mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Telessaúde Missionária</h1>
+            <p>Bem-vindo(a)! Selecione sua região de atuação ou grupo de interesse abaixo para ser direcionado(a) ao WhatsApp.</p>
+        </header>
+
+        <h2 class="section-title">Escolha sua Região de Atuação</h2>
+        <div class="region-grid">
+            <div class="region-card">
+                <h2>🇪🇺 REGIÃO EUROPA</h2>
+                <p>Abrange todos os países da Europa Ocidental e Oriental, assim como o Leste Europeu. Desafios: secularização, reevangelização pós-cristã.</p>
+                <a href="https://chat.whatsapp.com/HRFjmsSMGEU0ziJxmNp26r" class="btn-whatsapp" target="_blank">Acessar Grupo Europa</a>
+            </div>
+
+            <div class="region-card">
+                <h2>🌊 REGIÃO OCEANIA</h2>
+                <p>A região do Pacífico, incluindo Austrália e Nova Zelândia. Missionários atuam desde países desenvolvidos até comunidades insulares isoladas.</p>
+                <a href="https://chat.whatsapp.com/I7M9m6ksG3UEW1i61nesvW" class="btn-whatsapp" target="_blank">Acessar Grupo Oceania</a>
+            </div>
+
+            <div class="region-card">
+                <h2>🌍 REGIÃO ÁFRICA</h2>
+                <p>De centros urbanos populosos a áreas rurais remotas. A telessaúde é fundamental devido ao acesso limitado à saúde em algumas regiões.</p>
+                <a href="https://chat.whatsapp.com/IzVCazekGkr4o8m1ORw1P4" class="btn-whatsapp" target="_blank">Acessar Grupo África</a>
+            </div>
+
+            <div class="region-card">
+                <h2>🌎 REGIÃO AMÉRICAS</h2>
+                <p>América Latina e América do Norte. Desafios: diversidade cultural, acesso limitado a cuidados médicos, comunidades marginalizadas.</p>
+                <a href="https://chat.whatsapp.com/LXHpv55z3zCB4hM5ZJLZu0" class="btn-whatsapp" target="_blank">Acessar Grupo Américas</a>
+            </div>
+
+            <div class="region-card">
+                <h2>🌏 REGIÃO ÁSIA</h2>
+                <p>Do Oriente Médio ao Sudeste Asiático. Desafios culturais e sociais, frequentemente em ambientes onde o cristianismo é minoritário.</p>
+                <a href="https://chat.whatsapp.com/EB966Ntfcfv7xgAnPMBKsE" class="btn-whatsapp" target="_blank">Acessar Grupo Ásia</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Outros Grupos de Interesse</h2>
+        <div class="general-groups-grid">
+            <div class="general-group-card">
+                <h2>🌐 REDE GLOBAL TELESSAÚDE MISSIONÁRIA</h2>
+                <p>Uma plataforma para conectar missionários, promovendo troca de informações, apoio integral à saúde e crescimento mútuo.</p>
+                <a href="https://chat.whatsapp.com/GgnjqfSTEHZ2RNAgYN6KtD" class="btn-whatsapp" target="_blank">Acessar Rede Global</a>
+            </div>
+
+            <div class="general-group-card">
+                <h2>💡 HEALTHTECH MISSIONÁRIA</h2>
+                <p>Compartilhe inovações em Health Tech, IA e TI para Telessaúde Missionária neste grupo.</p>
+                <a href="https://chat.whatsapp.com/LRP4EAKBfm5CpI5vWosqe6" class="btn-whatsapp" target="_blank">Acessar HealthTech</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Telessaúde Missionária. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
